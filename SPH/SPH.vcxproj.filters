@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\graphics">
+      <UniqueIdentifier>{87c647a6-02ac-4ca1-b949-3e83e88947e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphics">
+      <UniqueIdentifier>{80523a98-d501-44b0-a7da-d03c0a75da02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shader">
+      <UniqueIdentifier>{8642abea-9cfd-47de-ad38-b0fac2feebe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shader\frag">
+      <UniqueIdentifier>{c599403c-9eec-4134-8164-35255e6d989b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shader\vert">
+      <UniqueIdentifier>{fe545b98-46d6-4f28-b55c-ce54e5ebff26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\test1">
+      <UniqueIdentifier>{2d4e9132-ed03-4035-8c56-f16c23b66cb8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\main_G.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\textfile.cpp">
+      <Filter>Source Files\graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\graphics\main_G.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\graphics\textfile.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\graphics\bmploader.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\graphics\terrain.h">
+      <Filter>Header Files\graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\vert\particle.vert">
+      <Filter>Resource Files\shader\vert</Filter>
+    </None>
+    <None Include="shader\vert\terrain.vert">
+      <Filter>Resource Files\shader\vert</Filter>
+    </None>
+    <None Include="shader\vert\matrix.vert">
+      <Filter>Resource Files\shader\vert</Filter>
+    </None>
+    <None Include="shader\frag\particle.frag">
+      <Filter>Resource Files\shader\frag</Filter>
+    </None>
+    <None Include="shader\frag\terrain.frag">
+      <Filter>Resource Files\shader\frag</Filter>
+    </None>
+    <None Include="shader\frag\matrix.frag">
+      <Filter>Resource Files\shader\frag</Filter>
+    </None>
+    <None Include="..\README.md" />
+    <None Include="..\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\test1.cord">
+      <Filter>Resource Files\test1</Filter>
+    </Text>
+    <Text Include="res\test1.index">
+      <Filter>Resource Files\test1</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
