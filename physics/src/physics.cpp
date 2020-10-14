@@ -271,7 +271,7 @@ void p_matrix::matrixNextState(bool type) {
 			output[i] = 0;
 	}
 
-	//vis
+	/*//vis
 	for (int x = 0; x < matrixSize[0]; x++) {
 		for (int y = 0; y < matrixSize[1]; y++) {
 			for (int z = 0; z < matrixSize[2]; z++) {
@@ -302,8 +302,9 @@ void p_matrix::matrixNextState(bool type) {
 			}
 		}
 	}
+	*/
 
-	/*//collision
+	//collision
 	for (int x = 0; x < matrixSize[0]; x++) {
 		for (int y = 0; y < matrixSize[1]; y++) {
 			for (int z = 0; z < matrixSize[2]; z++) {
@@ -334,7 +335,6 @@ void p_matrix::matrixNextState(bool type) {
 			}
 		}
 	}
-	*/
 
 	//gravity
 	for (int x = 0; x < matrixSize[0]; x++) {
