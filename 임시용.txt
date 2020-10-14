@@ -1,0 +1,54 @@
+//////////////////////////////////////
+//	    서문		//
+//////////////////////////////////////
+
+ 이 프로젝트는 유체를 시뮬레이션하는 프로그램에 대한 실험이다. 유체 시뮬레이터를 만들기 위해서는 유체 그래픽 렌더링과 유체의 움직임, 이 두 가지를 해결하는 것이 중요하다 생각했다. 유체를 어떻게 렌더링할지 고민하던 중 물은 여러 물 분자들로 구성되어 있다는 점을 생각했다. 인간의 눈에서 유체는 하나의 덩어리이지만 실제로는 매우 작은 알갱이들이 뭉친 것과 같다고 할 수 있다. 마치 모래 알갱이들이 뭉친 것과 같다. 그래서 이 알갱이들을 충분히 잘 표현해낸다면 유체처럼 보이게 될 것이라 생각했다. 추가적으로 이 알갱이 모델을 사용하면 유체의 움직임을 표현할 수 있다고 생각했다. 예를들어 사람들이 모래사막에서 모래들이 마치 물처럼 흐른다고 한다. 이처럼 알갱이모델을 사용한다면 유체 렌더링과 움직임 모두 표현할 수 있을 것이라 생각하고 프로젝트를 시작했다.
+
+This project is an experiment on a program that simulates fluids. I thought it was important to solve both fluid graphics rendering and fluid motion in order to create a fluid simulator. While contemplating how to render a fluid, I thought that water is made up of several water molecules. In the human eye, fluid is a lump, but in reality it can be said to be like a bunch of very small particles. It's like a bunch of sand grains. So I thought that if these grains were expressed well enough, they would look like fluid. Additionally, I thought that using this granular model could represent the motion of the fluid. For example, people say that sand flows like water in a sandy desert. I thought that if I used a grain model like this, I could express both fluid rendering and motion, and I started the project.
+
+
+//////////////////////////////////////
+//	    계획		//
+//////////////////////////////////////
+
+	1. 물리
+
+ 앞서 설명했듯이 유체의 움직임을 표현하기 위해서는 particle간의 적절한 물리법칙이 필요하다. 실제 분자세계에서는 분자간의 인력과 척력이 존재한다. 만약 거리에 따른 인력의 세기와 척력의 세기에 대한 공식을 적용한다면 유체의 움직임을 표현할 수 있을것이라 생각했다. 하지만 반대로 거리에 따른 인력의 세기와 척력의 세기에 대한 공식을 모른다면 적용할 수 없다. 인력의 세기와 척력의 세기에 대한 공식을 구하지 못해 단순히 작용과 반작용 법칙을 적용하기로 했다. particle간의 충돌이 이루어지면 서로의 운동량을 교환하도록 계산했다. 만약 particle들이 에너지 손실이 없는 탄성 충돌을 하게 되면 끝없이 충돌하게 되기 때문에 충돌시 운동에너지가 조금씩 감소하게 설정했다.
+
+ As explained earlier, in order to express the motion of a fluid, an appropriate physical law between particles is required. In the real molecular world, there are attractive and repulsive forces between molecules. I thought it would be possible to express the movement of fluid if we applied the formula for the strength of attraction and the strength of repulsion according to distance. However, on the contrary, if you do not know the formula for the strength of the attraction and the strength of repulsion according to distance, it cannot be applied. Since the formula for the strength of gravity and the strength of repulsion could not be obtained, it was decided to simply apply the laws of action and reaction. When particles collide, they are calculated to exchange their momentum. If particles collide with elasticity without energy loss, they collide endlessly, so the kinetic energy is set to decrease little by little when colliding.
+
+	2. particle 모델
+
+ 실제 분자들은 여러개의 원자들로 이루어져 있다. 예를 들어 물은 수소2개와 산소 1개, 총 3개로 이루어져 있다. 여러개의 원자를 가진 분자 모델로 시뮬레이터를 만들기에는 연산량이 많아진다. 추가적으로 실제 분자의 크기와 분자간의 거리를 비교했을 때 분자의 크기보다 분자간의 거리가 더 크기때문에 충분히 무시할 수 있다고 생각했다. 그래서 시뮬레이터에서 분자 모델대신 단순한 구형 모델을 사용하기로 했다. 구형 모델을 사용할 경우 두 particle에 대한 거리를 구하는데 연산량이 줄어든다. 거리측정이 연산량이 적어질 경우 particle간의 충돌을 계산하기 쉬워진다. 구형 모델 particle의 지름 크기를 기준으로 크면 충돌하지 않고 작으면 충돌했다는 뜻이 되기 때문이다.
+
+ Real molecules are made up of several atoms. For example, water consists of 2 hydrogens and 1 oxygen, a total of 3. It takes a lot of computation to build a simulator with a molecular model with multiple atoms. In addition, when comparing the size of the actual molecule and the distance between molecules, I thought that the distance between molecules was larger than the size of the molecule, so it could be sufficiently ignored. So I decided to use a simple spherical model instead of a molecular model in the simulator. In the case of using a spherical model, the amount of calculation is reduced to obtain the distance between two particles. If distance measurement becomes less computational, it becomes easier to calculate collisions between particles. This is because, based on the diameter size of the spherical model particle, if it is large, it does not collide, and if it is small, it means it collides.
+
+	3. 지형 렌더링
+
+ 지형또한 구형 particle 모델이어야 유체 particle과의 상호작용을 계산하기 쉬을 것이다. 하지만 지형을 만들기위해서는 기존의 폴리곤 형태로 렌더링하는 것이 새로운 지형을 만들기 쉽다. 왜냐하면 3개의 점에 대한 좌표만 있으면 하나의 면을 만들 수 있지만 particle의 형태로 면을 만들려면 면 안에 수많은 particle에 대한 좌표들이 필요하다. 지형 particle 하나하나 위치좌표를 찍어내는 것 보다는 폴리곤 삼각형 점 3개로 면 안에 particle로 가득 채울 필요가 있다. 그래서 3개의 점을 사용해서 일정한 위치마다 면 안에 일정한 간격으로 particle들이 만들어지도록 했다.
+
+ The terrain should also be a spherical particle model so it will be easier to calculate interactions with fluid particles. However, in order to create a terrain, rendering it in the form of an existing polygon is easier to create a new terrain. Because you can create a single surface with only coordinates for three points, but to create a surface in the form of particles, you need coordinates for a number of particles in the surface. Rather than taking the location coordinates of each of the terrain particles, it is necessary to fill the surface with three polygonal triangle points. So, using three points, particles are created at regular intervals in the plane at regular locations.
+
+
+//////////////////////////////////////
+//	    코드		//
+//////////////////////////////////////
+
+	1. 데이터 구조
+
+ 우선 각 particle의 정보를 담을 데이터 구조가 필요하다. 물체의 움직임을 표현하기 위해서는 위치, 속도 그리고 가속도이 3가지가 필요하다. 그리고 particle이 유체 particle인지 지형 particle인지 표시할 필요가 있다. particle의 수가 많아 질수록 particle간의 충돌 검사의 횟수가 비선형적이게 증가한다. 그래서 더욱 적절한 데이터 구조가 필요했다. 두 particle의 거리가 충분히 멀다면 서로 충돌할 가능성이 전혀 없다. 그래서 때문에 충분히 거리가 떨어진 두 particle에 대해서는 충돌하는지 검사할 필요가 없다. 그래서 3차원 array에 linked list를 사용해서 particle의 위치에 따라 한 linked list에 추가한다. 그리고 추가된 linked list 주변에 있는 linked list에 있는 particle에 대해서만 충돌을 검사하면 되기에 필요한 연산량이 적어진다.. 
+
+	2. 알고리즘
+
+
+//////////////////////////////////////
+//	    결과		//
+//////////////////////////////////////
+
+
+
+//////////////////////////////////////
+//	    한계		//
+//////////////////////////////////////
+
+
