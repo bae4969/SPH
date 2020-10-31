@@ -2,19 +2,19 @@ Fluid Simulator with SPH
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-- Shading
+- Rendering
 
 in top of the grapic/main_G.cpp
 
-when define "SPHERE_SHADING", it just use plane shading.
+when define "SPHERE_SHADING", it just use plane rendering
 
-when define "VOLUME_SHADING", it use volume shading with threshold.
+when define "VOLUME_SHADING", it use volume rendering with threshold.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 - Keyboard Inputs
 
-q, w, e, a, s, d		:	camera movement
+q, w, e, a, s, d		:	rotate camera
 
 z, c			:	zoom in out
 

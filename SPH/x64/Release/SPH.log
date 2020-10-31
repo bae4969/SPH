@@ -11,4 +11,95 @@
   D:\Main\git\2.complete\SPH\SPH\res\test1.cord
   D:\Main\git\2.complete\SPH\SPH\res\test1.index
   3개 파일이 복사되었습니다.
+  main_G.cpp
+D:\Main\git\2.complete\SPH\SPH\inc\graphics\terrain.h(53,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\inc\graphics\terrain.h(94,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\inc\graphics\terrain.h(135,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\inc\graphics\terrain.h(261,51): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,47): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,47): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,92): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(78,92): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(79,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(112,25): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(113,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(130,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(131,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(136,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(138,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(139,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(141,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(146,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(148,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(149,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(151,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(154,26): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(156,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(157,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(159,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(160,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(162,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(164,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(166,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(167,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(169,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(170,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(172,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(175,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(177,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(178,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(180,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(181,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(183,30): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(185,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(187,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(188,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(190,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(191,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(193,31): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(196,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(198,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(199,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(201,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(202,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(204,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(206,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(208,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(209,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(211,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(212,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(214,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(217,28): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(219,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(220,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(222,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(223,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(225,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(227,32): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(229,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(230,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(232,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(233,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(235,33): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(310,3): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(311,4): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(295,8): warning C4101: 'z': unreferenced local variable
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(364,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(450,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(491,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(496,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(497,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(557,19): warning C4305: '*=': truncation from 'double' to 'float'
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(596,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(597,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(600,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\Main\git\2.complete\SPH\SPH\src\graphics\main_G.cpp(601,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+     Creating library D:\Main\git\2.complete\SPH\x64\Release\SPH.lib and object D:\Main\git\2.complete\SPH\x64\Release\SPH.exp
+  Generating code
+  13 of 58 functions (22.4%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
   SPH.vcxproj -> D:\Main\git\2.complete\SPH\x64\Release\SPH.exe
